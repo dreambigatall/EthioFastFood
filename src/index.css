@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/*some thing*/
+
+
+.button {
+  display: inline-block;
+  width: 48px;
+  height: 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f2;
+  outline: 1px solid #f3f3f2;
+  transition: 0.4s;
+  -webkit-box-shadow: inset -1px 3px 4px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset -1px 3px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset -1px 3px 4px 0px rgba(0, 0, 0, 0.2);
+}
