@@ -1,6 +1,6 @@
 
 
-import React, { useContext, useState } from "react";
+/*import React, { useContext, useState } from "react";
 import { Link, useSearchParams, useLoaderData } from "react-router-dom"
 import GetDataApi from "../Api/apiAll";
 import SortOption from "../pages/SortingPage";
@@ -9,7 +9,7 @@ import Banner from "../Fetures/Banner";
 /*export function loader(){
      
     return GetDataApi()
-}*/
+}
 export default function Realestate() {
 
     const [params , setParams] = useSearchParams();
@@ -133,3 +133,4 @@ export default function Realestate() {
         </div>
     )
 }
+*/

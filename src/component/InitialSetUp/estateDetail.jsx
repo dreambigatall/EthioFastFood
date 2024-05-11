@@ -1,5 +1,5 @@
 
-import React , { useContext, useEffect, useState } from "react"
+/*import React , { useContext, useEffect, useState } from "react"
 import { useParams ,Outlet,  Link, useLocation } from "react-router-dom"
 import { CartContext } from "./CartContext";
 import GetDeatailApiData from "../Api/apiDetail";
@@ -82,4 +82,4 @@ export default function RealDetail() {
     </div>
     )
 }
-
+*/

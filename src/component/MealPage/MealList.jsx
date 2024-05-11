@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import GetDataApi from "../../Api/apiAll";
 import { useEffect, useState, useContext } from "react";
 import ButtonHandler from "../ButtonRefactor";
@@ -6,7 +6,8 @@ import {LiaRupeeSignSolid} from "react-icons/lia"
 import { CartContext } from "../CartContext";
 export default function MealItem() {
     
-   
+    const [serch,setSerch]=useSearchParams()
+    const [params, setParams] = useSearchParams()
     const { dataApi } = useContext(CartContext)
    
     const navigate = useNavigate();
@@ -15,7 +16,7 @@ export default function MealItem() {
       
       navigate(`/vans/${id}`);
     }
-  
+
     return (
       <>
         {dataApi?.map((item) => {
