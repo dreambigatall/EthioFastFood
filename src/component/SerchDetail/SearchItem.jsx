@@ -8,7 +8,7 @@ export default function SearchItem({ searchResults }) {
     
      
     function handleClickMeal(id) {
-      navigate(`/vans/${id}`);
+      navigate(`/pizzas/${id}`);
     }
     return (
       <>
