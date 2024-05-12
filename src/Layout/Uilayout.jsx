@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import React from "react";
 
-import Header from "./Header";
+
 import Developer from "./Footer";
 import NavBar from "../Fetures/NavBar";
 import UIPositionFixed from "../UI/UIpositionFixed";
