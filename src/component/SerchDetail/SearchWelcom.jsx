@@ -7,7 +7,7 @@ export default function SearchMessage() {
           alt='cheffest'
         />
         <p className=' text-sm text-MediumGrey'>
-          Hello, what are you feeling to eat today... 🤤
+          Hello, what are you feeling to eat today.... 🤤
         </p>
       </div>
     );
