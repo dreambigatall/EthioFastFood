@@ -1,5 +1,5 @@
  export default async function GetDeatailApiData(id){
-     const url = id ? `/api/vans/${ id }` : '/api/vans';
+     const url = id ? `/api/pizzas/${ id }` : '/api/pizzas';
     const res= await fetch(url)
     if(!res.ok){
         throw{

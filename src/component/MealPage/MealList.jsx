@@ -2,7 +2,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import GetDataApi from "../../Api/apiAll";
 import { useEffect, useState, useContext } from "react";
 import ButtonHandler from "../ButtonRefactor";
-import {LiaRupeeSignSolid} from "react-icons/lia"
+import {LiaDollarSignSolid} from "react-icons/lia"
 import { CartContext } from "../CartContext";
 export default function MealItem() {
     
@@ -14,7 +14,7 @@ export default function MealItem() {
   
     function handleClickMeal(id) {
       
-      navigate(`/vans/${id}`);
+      navigate(`/pizzas/${id}`);
     }
 
     return (
@@ -44,7 +44,7 @@ export default function MealItem() {
                 </p>
                 
                 <div className=' mb-auto flex items-center text-xl '>
-                  <LiaRupeeSignSolid className=' mt-[-4px]  stroke-[0.8]   text-Yellow' />
+                  <LiaDollarSignSolid className=' mt-[-4px]  stroke-[0.8]   text-Yellow' />
                   <p className=' text-2xl font-bold tracking-tight text-DarkGrey '>
                     {item.price}
                   </p>

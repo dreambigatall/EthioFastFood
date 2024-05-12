@@ -1,5 +1,5 @@
 export default async function GetDataApi(){
-    const res = await fetch ("/api/vans");
+    const res = await fetch ("/api/pizzas");
     if(!res.ok){
         throw{
         message:"Faild to load",

@@ -1,6 +1,7 @@
 import { CartContext } from "../CartContext";
 import { useContext } from "react";
 import CartItem from "./CartList";
+import NoDataFound from "../NoData";
 
 import NoSearchMessage from "../SerchDetail/NoSerch";
 
@@ -37,7 +38,7 @@ export default function CartDetail(){
                 </div>
                 <div className=' flex flex-col justify-center items-center gap-8'>
                   {cart?.length < 1 ? (
-                    <NoSearchMessage />
+                    <NoDataFound/>
                   ) : (
                     <CartItem cartData={cart} />
                   )}

@@ -24,7 +24,7 @@ return(
   
   <Route path="/serch" element={<Search/>} />
   <Route path="/order" element={<CartDetail/>}/>
-  <Route path="/vans/:id" element={<ItemDetail/>}>
+  <Route path="/pizzas/:id" element={<ItemDetail/>}>
     <Route index element={<Detail/>}/>
     <Route path="photos" element={<Photos/>}/>
     <Route path="price" element={<Price/>}/>

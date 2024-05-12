@@ -10,6 +10,9 @@ import Catagaroy from "./DetailPages/Catagory";
 import MealCount from "./DetailPages/MealButtonCount";
 import { IoClose } from "react-icons/io5";
 import ButtonHandler from "./ButtonRefactor";
+import Ingrident from "./DetailPages/Ingrident";
+import MealStickers from "./DetailPages/MealType";
+import { nonVeg, veg } from "../Utils/UniversalConstData";
 export default function ItemDetail() {
     const {cart, getQuantityForItem} = useContext(CartContext);
     
@@ -64,7 +67,7 @@ export default function ItemDetail() {
               >
                 <div className=' self-end '>
                   <IoClose
-                    className=' text-3xl cursor-pointer text-Red md:text-4xl'
+                    className='close mt-4 text-3xl cursor-pointer text-Red md:text-4xl'
                     onClick={() => navigate('/')}
                   />
                 </div>
@@ -81,9 +84,36 @@ export default function ItemDetail() {
                         {isCartLoading && <h1>Loading..</h1>}
                       </div>
                       <Dscription description={item.description} />
-                      <Catagaroy category={item.type} />
+                      <Ingrident ingrident={item.ingredients}/>
+                      
+                      
+                    </div>
+                    <div className=' flex flex-wrap justify-center gap-y-3 gap-x-6 md:gap-x-12 md:gap-y-6 sm:justify-normal'>
+                  {item.type === 'veg' ? (
+                    <MealStickers
+                      title={item.type}
+                      image={veg}
+                      alt={item.type}
+                      type={'veg'}
+                      padding='p-[6px] md:p-[8px]'
+                      width='w-[30px] md:w-[40px]'
+                      height='h-[30px] md:h-[40px]'
+                    />
+                  ) : (
+                    <MealStickers
+                      title={item.type}
+                      image={nonVeg}
+                      alt={item.type}
+                      type={'non-veg'}
+                      padding='p-[6px] md:p-[8px]'
+                      width='w-[30px] md:w-[40px]'
+                      height='h-[30px] md:h-[40px]'
+                    />)}
+                    <Catagaroy category={item.catagory}/> 
+                    <Price price={item.price}/>
                     </div>
                     </div>
+                    
                     </div>
                     <MealCount  item={item}  isCartLoading={!isCartLoading}  />
                     <ButtonHandler item={item}/>

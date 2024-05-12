@@ -23,3 +23,16 @@
   -moz-box-shadow: inset -1px 3px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: inset -1px 3px 4px 0px rgba(0, 0, 0, 0.2);
 }
+
+.close {
+   /* Adjust the value as needed */
+  font-size: 3xl;
+  cursor: pointer;
+  color: Red;
+}
+
+@media (min-width: 768px) {
+  .className {
+    font-size: 4xl;
+  }
+}
