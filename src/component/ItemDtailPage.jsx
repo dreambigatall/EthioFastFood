@@ -1,6 +1,6 @@
 import React , { useContext, useEffect, useState } from "react"
 import { useParams ,Outlet,  Link, useLocation, useNavigate } from "react-router-dom"
-import { CartContext } from "./CartContext";
+import { CartContext } from "./Store/CartContext";
 import GetDeatailApiData from "../Api/apiDetail";
 import Dscription from "./DetailPages/Description";
 import Price from "./DetailPages/Price";

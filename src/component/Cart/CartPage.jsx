@@ -1,4 +1,5 @@
-import { CartContext } from "../CartContext";
+
+import { CartContext } from "../Store/CartContext";
 import { useContext } from "react";
 import CartItem from "./CartList";
 import NoDataFound from "../NoData";

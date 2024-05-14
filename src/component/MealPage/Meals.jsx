@@ -2,7 +2,7 @@ import { useState, useEffect,useContext } from "react";
 import MealItem from "./MealList";
 import NoData from "../NoDataFound";
 import GetDataApi from "../../Api/apiAll";
-import { CartContext } from "../CartContext";
+import { CartContext } from "../Store/CartContext";
 
 export default function Meals() {
    

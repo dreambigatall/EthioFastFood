@@ -5,7 +5,7 @@ import { IoHome } from "react-icons/io5";
 import SearchItem from "./SearchItem";
 import NoSearchMessage from "./NoSerch";
 import SearchMessage from "./SearchWelcom";
-import { CartContext } from "../CartContext";
+import { CartContext } from "../Store/CartContext";
     export default function Search(){
 
      const [isClicked, setIsClicked] = useState(false);

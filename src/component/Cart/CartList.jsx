@@ -1,5 +1,6 @@
 import QuantityButton from "./QuantityButton";
-import { CartContext } from "../CartContext";
+
+import { CartContext } from "../Store/CartContext";
 import { useContext } from "react";
 import {FaTrash} from  "react-icons/fa"
 import {MdOutlineRemoveCircle} from "react-icons/md"

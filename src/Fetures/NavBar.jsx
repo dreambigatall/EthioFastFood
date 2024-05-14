@@ -1,6 +1,6 @@
 import {FiShoppingCart, FiSearch} from "react-icons/fi";
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import { CartContext } from "../component/CartContext";
+import { CartContext } from "../component/Store/CartContext";
 import { useContext } from "react";
 import Logo from "../UI/Logo";
 

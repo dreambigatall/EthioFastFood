@@ -1,8 +1,8 @@
 import {IoMdAdd, IoMdRemove} from "react-icons/io";
 
 import { useContext } from "react";
-import { CartProvider } from "../CartContext";
-import { CartContext } from "../CartContext";
+import { CartProvider } from "../Store/CartContext";
+import { CartContext } from "../Store/CartContext";
 
  
 

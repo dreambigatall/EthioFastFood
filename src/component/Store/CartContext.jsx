@@ -1,6 +1,6 @@
-import GetDataApi from '../Api/apiAll';
+import GetDataApi from '../../Api/apiAll';
 
-import React, { createContext, useEffect, useState } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 
 export const CartContext = createContext();
 
@@ -128,3 +128,9 @@ export const CartProvider = ({ children }) => {
     </CartContext.Provider>
   );
 };
+
+ export function usePropsOfContext(){
+  const data = useContext(CartContext)
+  if(data === undefined) throw new Error("the CartContext used out side the place")
+  return data;
+}

@@ -1,4 +1,5 @@
-import { CartContext } from "../CartContext";
+
+import { CartContext } from "../Store/CartContext";
 import { useContext } from "react";
 
 export default function QuantityButton({item}){

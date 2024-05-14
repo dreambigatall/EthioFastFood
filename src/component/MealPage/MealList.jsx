@@ -3,7 +3,7 @@ import GetDataApi from "../../Api/apiAll";
 import { useEffect, useState, useContext } from "react";
 import ButtonHandler from "../ButtonRefactor";
 import {LiaDollarSignSolid} from "react-icons/lia"
-import { CartContext } from "../CartContext";
+import { CartContext } from "../Store/CartContext";
 export default function MealItem() {
     
     const [serch,setSerch]=useSearchParams()

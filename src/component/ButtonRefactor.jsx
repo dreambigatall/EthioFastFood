@@ -1,4 +1,4 @@
-import { CartContext } from "./CartContext";
+import { CartContext } from "./Store/CartContext";
 import { useContext, useState } from "react";
 import {IoIosRemoveCircle, IoIosAddCircle} from "react-icons/io"
 export default function ButtonHandler({item}){
