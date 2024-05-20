@@ -31,6 +31,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "miragejs": "^0.1.48",
     "tailwindcss": "^3.4.3"
   }
