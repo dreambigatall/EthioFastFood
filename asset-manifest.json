@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/EthioFastFood/static/css/main.03f45a7f.css",
+    "main.js": "/EthioFastFood/static/js/main.6b10a296.js",
+    "index.html": "/EthioFastFood/index.html",
+    "main.03f45a7f.css.map": "/EthioFastFood/static/css/main.03f45a7f.css.map",
+    "main.6b10a296.js.map": "/EthioFastFood/static/js/main.6b10a296.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03f45a7f.css",
+    "static/js/main.6b10a296.js"
+  ]
+}
